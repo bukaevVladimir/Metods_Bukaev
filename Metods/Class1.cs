@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Metods
 {
-    internal class Class1
+    static class Class1
     {
+        public static void Write()
+        {
+            Console.WriteLine("QQQ");
+        }
     }
 }
