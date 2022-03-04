@@ -1,5 +1,7 @@
-﻿using HW_1;
-Class1.solution();
+﻿
+namespace HW_1
+{
+  Class1.solution();
 
-using HW_2;
-Class1.solution2();
+  Class2.solution2();
+}

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW_1
 {
-    static class Class1
+    public static class Class1
     {
         public static void solution()
         {
@@ -20,11 +20,8 @@ namespace HW_1
             Console.WriteLine($"Ответ: {c}");
         }
     }
-    
-}
-namespace HW_2
-{
-    static class Class1
+
+    public static class Class2
     {
         public static void solution2()
         {
@@ -40,6 +37,8 @@ namespace HW_2
             double x = (c - b) / a;
             Console.WriteLine($"Ответ: {x}");
         }
+
+
 
     }
 }
