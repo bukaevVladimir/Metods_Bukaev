@@ -31,7 +31,7 @@ namespace HW_1
             Console.Write("Введите число b, не равное нулю: ");
             double b = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Введите число c, не равное нулю: ");
+            Console.Write("Введите число c, не равное нулю:      ");
             double c = Convert.ToDouble(Console.ReadLine());
 
             double x = (c - b) / a;
