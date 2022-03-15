@@ -68,20 +68,22 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.Write("В какую степень возвести: ");
 int degree = Convert.ToInt32(Console.ReadLine());
 
+int res = ClassForTasksByCycles.FirstDegree(number, degree);
+Console.WriteLine($"Ответ: {res}");
 
-int tmp = 1;
 
-bool isPositive = number >= 0;
+//// 3 задача по циклам
+//int A;
+//do
+//{
+//    Console.Write("Введите число A: ");
+//    A = Convert.ToInt32(Console.ReadLine());
+//}
+//while (A <= 0);
 
-number = Math.Abs(number);
-for (int i = 1; i <= degree; i++)
-{
-    tmp = tmp * number;
-}
-
-if (!isPositive)
-{
-    tmp = 1 / tmp;
-}
-
-Console.WriteLine(tmp);
+//int c = 1;
+//while (Math.Pow(c, 2) < A)
+//{
+//    c++;
+//}
+//Console.WriteLine(c);
