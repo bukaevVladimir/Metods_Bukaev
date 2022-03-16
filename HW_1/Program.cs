@@ -2,12 +2,20 @@
 
 //Пользователь вводит 2 числа (A и B). Выведите в консоль результат деления A на B и остаток от деления.
 // 1 задача 
-//Console.Write("Enter the first number: ");
-//double a_1 = Convert.ToDouble(Console.ReadLine());
-//Console.Write("Enter the second number: ");
-//double b_1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите первое число: ");
+int firstNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int secondNumber = Convert.ToInt32(Console.ReadLine());
 
+int e1 = Hw1forTasksWithAStar.DivisionProblem(firstNumber, secondNumber);
+int r1 = Hw1forTasksWithAStar.RemainderProblem(firstNumber, secondNumber);
 
+Console.WriteLine($"Результат:{e1},\nОстаток:{r1}");
+
+//(int, int) result123 = Hw1forTasksWithAStar.Try(firstNumber, secondNumber); //используется кортеж 
+//int division = result123.Item1;
+//int remainder = result123.Item2;
+//Console.WriteLine($"Результат:{division},\nОстаток:{remainder}");
 
 
 // 2 задача 
