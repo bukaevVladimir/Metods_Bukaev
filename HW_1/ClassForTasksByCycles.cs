@@ -53,5 +53,27 @@ namespace HW_1
             return v;
 
         }
+
+        public static int SumOfNumbersThatAreDivisibleBySeven(int a5, int b5) // 5 задача по циклам
+        {
+            int tmp;
+            int sum = 0;
+            if (b5 < a5)
+            {
+                tmp = b5;
+                b5 = a5;
+                a5 = tmp;
+            }
+            for (int i = a5; i <= b5; i++)
+            {
+                if (i % 7 == 0)
+                {
+                    sum += i;
+                }
+            }
+            return sum;
+
+        }
     }
+
 }

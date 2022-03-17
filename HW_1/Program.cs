@@ -109,3 +109,13 @@ int a4 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"Наибольший делитель: {ClassForTasksByCycles.GreatestDivisorOfANumber(a4)}");
 
+// 5 задача по циклам. Пользователь вводит 2 числа (A и B). Вывести сумму всех чисел из диапазона от A до B, которые делятся без остатка на 7.
+// (Учтите, что при вводе B может оказаться меньше A).
+
+Console.Write("Введите первое число: ");
+int a5 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int b5 = Convert.ToInt32(Console.ReadLine());
+
+
+Console.WriteLine($"Суммма чисел, которые делятся на 7 - {ClassForTasksByCycles.SumOfNumbersThatAreDivisibleBySeven(a5,b5)}");
