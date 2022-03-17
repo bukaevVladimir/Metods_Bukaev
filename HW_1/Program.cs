@@ -79,19 +79,33 @@ int degree = Convert.ToInt32(Console.ReadLine());
 int res = ClassForTasksByCycles.FirstDegree(number, degree);
 Console.WriteLine($"Ответ: {res}");
 
+//2 задача по циклам.
+//Пользователь вводит 1 число (A). Вывести все числа от 1 до 1000, которые делятся на A.
 
-// 3 задача по циклам
-int A;
-do
-{
-    Console.Write("Введите число A: ");
-    A = Convert.ToInt32(Console.ReadLine());
-}
-while (A <= 0);
+Console.Write($"Enter A: ");
+int t5 = Convert.ToInt32(Console.ReadLine());
 
-int c1 = 1;
-while (Math.Pow(c, 2) < A)
+for (int i = 1; i <= 1000; i++)
 {
-    c++;
+    if (i % t5 == 0)
+    {
+        Console.Write($"{i}\t");
+    }
 }
-Console.WriteLine(c);
+
+// 3 задача по циклам. Пользователь вводит 1 число (A). 
+//Найдите количество положительных целых чисел, квадрат которых меньше A
+
+Console.Write("Введите число, больше нуля: ");
+int a2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"{ClassForTasksByCycles.DivisibleNumbersByInput(a2)}");
+
+//4 задача по циклам.
+//Пользователь вводит 1 число (A). Вывести наибольший делитель (кроме самого A) числа A.
+
+Console.Write("Введите число, больше нуля: ");
+int a4 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Наибольший делитель: {ClassForTasksByCycles.GreatestDivisorOfANumber(a4)}");
+
