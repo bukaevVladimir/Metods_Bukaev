@@ -10,7 +10,7 @@ namespace MyFirstList
     public class ArrayList
     {
         private int[] _array;
-        private int index;
+        //private int index;
 
         public int Lenght { get; private set; }
         public ArrayList()
@@ -29,30 +29,54 @@ namespace MyFirstList
 
         }
 
-       public void AddToStart(int value)
+        public int DelleteVoid(int value)
         {
-            if(Lenght + 1 >= _array.Length)
+            int count = 0;
+            for(int i = 0; i<Lenght; i++)
             {
-                int newLength = (int)(_array.Length * 1.5) + 1;
-                int[] newArray = new int[newLength];
-                Copy(newArray);
+                if(_array[i]==value)
+                {
+                    count++;
+                }
+                else
+                {
+                    _array[i - count] = _array[i];
+                }
             }
-            int[] tttArray = new int[Lenght + 1];
-            for(int i = 0; i < index; i++)
-            {
-                tttArray[i] = _array[i];
-            }
-            for(int i = index; i < Lenght; i++)
-            {
-                tttArray[i + 1] = _array[i];
-            }
-            _array = tttArray;
+            Lenght -= count;
+            return count;            
         }
 
-        private void Copy(int[] newArray)
-        {
-            throw new NotImplementedException();
-        }
+
+
+
+
+
+
+       //public void AddToStart(int value)
+       // {
+       //     if(Lenght + 1 >= _array.Length)
+       //     {
+       //         int newLength = (int)(_array.Length * 1.5) + 1;
+       //         int[] newArray = new int[newLength];
+       //         Copy(newArray);
+       //     }
+       //     int[] tttArray = new int[Lenght + 1];
+       //     for(int i = 0; i < index; i++)
+       //     {
+       //         tttArray[i] = _array[i];
+       //     }
+       //     for(int i = index; i < Lenght; i++)
+       //     {
+       //         tttArray[i + 1] = _array[i];
+       //     }
+       //     _array = tttArray;
+       // }
+
+        //private void Copy(int[] newArray)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         private void UpSize()
         {

@@ -2,8 +2,7 @@
 
 ArrayList MyArrayList = new ArrayList();
 Console.WriteLine(MyArrayList.Lenght);
-MyArrayList.Add(1);
-Console.WriteLine(MyArrayList.Lenght);
+
 //MyArrayList.Add(6);
 //Console.WriteLine(MyArrayList.Lenght);
 //MyArrayList.Add(65);
